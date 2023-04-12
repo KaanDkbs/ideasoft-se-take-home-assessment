@@ -14,18 +14,27 @@ Then, go to the Laradock folder:
 cd laradock
 ```
 
+Create .env file
+```shell
+cp .env.example .env
+```
 To start the Docker containers, run the following command:
 ```shell
 docker-compose up -d nginx mysql phpmyadmin workspace
 ```
 Create Database
 ```shell
-"laravel_app" named database must be created. You can access PhpMyAdmin at http://localhost:8081
+"laravel-app" named database must be created. You can access PhpMyAdmin at http://localhost:8081
 ```
 
 To connect to the workspace container, run the following command:
 ```shell
 docker-compose exec workspace bash
+```
+
+Create .env file
+```shell
+cp .env.example .env
 ```
 
 To install the required PHP libraries, run the following command in the workspace container:
